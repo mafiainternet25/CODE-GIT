@@ -1,39 +1,41 @@
-🚀 1. Khởi tạo & kết nối repo
-    rm -rf .git # xóa hoàn toàn git
-    git init # tạo repo git
-    git remote add origin <url> # nối với GitHub
-    git clone <url> # clone repo về máy
+SOME CODE GIT FOR DEV
+```bash
+🚀 1. Init & Setup
+    rm -rf .git                 # delete git completely
+    git init                    # init repo
+    git remote add origin <url> # connect to GitHub
+    git clone <url>             # clone repo
 
-📦 2. Commit code (dùng mỗi ngày)
-    git status # xem thay đổi
-    git add . # add toàn bộ file
-    git add <file> # add file cụ thể
-    git commit -m "message" # commit
+📦 2. Commit (Daily)
+    git status                  # check changes
+    git add .                   # add all files
+    git add <file>              # add specific file
+    git commit -m "message"     # commit
 
-☁️ 3. Push / Pull (làm việc với GitHub)
-    git push # đẩy code lên
-    git push -u origin main # push lần đầu + set upstream
-    git pull # kéo code mới về
+☁️ 3. Push / Pull
+    git push                    # push code
+    git push -u origin main     # first push + set upstream
+    git pull                    # pull latest code
 
-🌿 4. Branch (cực quan trọng)
-    git branch # xem branch
-    git branch <name> # tạo branch
-    git checkout <name> # chuyển branch
-    git checkout -b <name> # tạo + chuyển luôn
-    git branch -M main # đổi tên branch
+🌿 4. Branch
+    git branch                  # list branches
+    git branch <name>           # create branch
+    git checkout <name>         # switch branch
+    git checkout -b <name>      # create & switch
+    git branch -M main          # rename to main
 
-🔄 5. Đồng bộ code (hay gặp lỗi)
-    git pull origin main # kéo code về
-    git pull --rebase # pull sạch hơn (pro)
+🔄 5. Sync Code
+    git pull origin main        # pull from main
+    git pull --rebase           # cleaner pull (recommended)
 
-💣 6. Fix lỗi & undo (cực hữu ích)
-    git log --oneline
-    git reset --hard <commit> #Quay lại commit cũ
-    git restore --staged <file> #Huỷ file đã add
-    git rm --cached <file> #Xoá file khỏi git (giữ trên máy)
-    git push -f origin main #Push đè (danger nhưng hay dùng)
+💣 6. Fix & Undo
+    git log --oneline           # view commits
+    git reset --hard <commit>   # reset to commit
+    git restore --staged <file> # unstage file
+    git rm --cached <file>      # remove from git (keep local)
+    git push -f origin main     # force push (danger)
 
-🧪 7. Debug & kiểm tra
-    git log --oneline # xem lịch sử commit
-    git diff # xem thay đổi
-    git reflog # cứu dữ liệu (rất mạnh)
+🧪 7. Debug
+    git log --oneline           # commit history
+    git diff                    # file changes
+    git reflog                  # recovery (very powerful)
